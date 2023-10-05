@@ -9,7 +9,7 @@ direct_timeseries_entries = [
         #("r1 pH", 11, "", 0),
         #("r1 cond", 12, "", 0),
         #("r1 mg", 13, "", 0),
-        ("r2 temperature", 16, "", 0),
+        #("r2 temperature", 16, "", 0),
         ("r2 mg", 9, "", 0),
         ("r2 cond", 8, "", 0),
         ("r2 pH", 7, "", 0)]
