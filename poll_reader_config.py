@@ -24,7 +24,7 @@ direct_timeseries_entries = [
 
 processed_timeseries_entries = [(
     "linear-correction", 19, 
-    ["-m", "magnesio_torre.json", "-c mg-calibration-torre.json"], 
+    ["--measurement", "magnesio_torre.json", "--calibration mg-calibration-torre.json"], 
     "", 0)]       
 #(
             #"h2s-determination", 5,
