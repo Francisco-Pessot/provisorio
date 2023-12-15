@@ -9,7 +9,7 @@ direct_timeseries_entries = [
         #("r1 pH", 11, "", 0),
         #("r1 cond", 12, "", 0),
         #("r1 mg", 13, "", 0),
-        #("r2 temperature", 16, "", 0),
+        ("r2 tmp", 16, "", 0),
         ("r2 mg", 9, "magnesio_torre.json", 10),
         ("r2 cond", 8, "", 0),
         ("r2 pH", 7, "", 0)]
@@ -25,7 +25,11 @@ direct_timeseries_entries = [
 processed_timeseries_entries = [(
     "linear-correction", 19, 
     ["--measurement", "magnesio_torre.json", "--calibration", "mg-calibration-torre.json"], 
-    "", 0)]       
+    "", 0),(
+    "shifted-inverse-regression", 20, 
+    ["--measurement", "magnesio_torre.json", "--calibration", "al-regression-torre.json"],
+    "", 0)
+]       
 #(
             #"h2s-determination", 5,
             #["-t", "temperature.json", "-v", "voltage.json", "-c", "h2s-calibration.json"],
