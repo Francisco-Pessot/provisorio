@@ -1,3 +1,8 @@
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 BLACK = '\033[30m'
 RED = '\033[31m'
 GREEN = '\033[32m'
